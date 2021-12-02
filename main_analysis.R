@@ -13,17 +13,12 @@ library(PerformanceAnalytics)
 library(forecast)
 library(rvest)
 library(MASS)
-library(scatterplot3d) 
 
 
 rm(list = ls())
 gc()
 
-# DECIDE WHETHER TO ESTIMATE THE PARAMETERS FOR BACKTESTING
-ESTIMATE <- FALSE
-
-
-output.dir <- "/home/simaan/Dropbox/Publications/Working Research Paper/Skewness/R/IRFA/Paper 2021 12 02"
+output.dir <- "latex_folder"
 output.dir.fig <- paste(output.dir,"/Figures/",sep = "")
 output.dir.tables <- paste(output.dir,"/Tables/",sep = "")
 
