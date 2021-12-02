@@ -34,7 +34,7 @@ locate.table <- which.max(sapply(find.sym, length) + sapply(find.sec, length) )
 ds <- tables.list[[locate.table]][[1]]
 
 #### LOAD CRSP DATA ######
-file.i <- "/home/simaan/Dropbox/Data/DATA/CRSP_1960_2019_d.csv"
+file.i <- "CRSP_1960_2019_d.csv" # crsp data data
 
 select_var <- c("PERMCO","PERMNO","date","COMNAM","SHROUT","RET","PRC","TICKER")
 DS <- fread(file.i,select = select_var)
