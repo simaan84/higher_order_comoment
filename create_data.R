@@ -15,7 +15,7 @@ gc()
 
 
 #### FIND THE S&P 500 CONST. 
-theurl <- "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+theurl <- "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies" # scrap data from Wiki
 
 file <- read_html(theurl)
 tables <- html_nodes(file, "table")
